@@ -16,7 +16,7 @@ font _ Gilroy
 
 body {
   font-family: "Nunito", sans-serif;
-  background:white;
+  background: white;
 }
 
 .hero {
@@ -44,7 +44,7 @@ body {
   padding: 0;
   font-size: 1rem;
   font-weight: 600;
-  color:#eeeded;
+  color: #eeeded;
 }
 
 .image {
@@ -59,14 +59,14 @@ img {
 .second_section {
   width: 85%;
   height: 4rem;
-  margin:auto;
+  margin: auto;
   background: #edeeee;
   border-radius: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px;
-  margin-top:8rem;
+  margin-top: 8rem;
   margin-bottom: 2rem;
 }
 
@@ -78,11 +78,24 @@ img {
 }
 
 .second_section button {
-  width: 3.3rem;
-  height: 3.3rem;
+  width: 3rem;
+  height: 3rem;
   background: #899f70;
   border-radius: 3rem;
   border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  animation: slide 2s infinite ease;
+}
+
+/* animaiton */
+@keyframes slide {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 ion-icon {
